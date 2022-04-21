@@ -1,0 +1,10 @@
+.Xil/
+*.log
+*.dmp
+\#*
+*~
+SDR2-HDL.cache
+SDR2-HDL.gen
+SDR2-HDL.ip_user_files
+SDR2-HDL.runs
+*.jou
