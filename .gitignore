@@ -8,3 +8,17 @@ SDR2-HDL.gen
 SDR2-HDL.ip_user_files
 SDR2-HDL.runs
 *.jou
+SDRv2.cache
+SDRv2.dtbo
+SDRv2.hw
+*.xpr
+*.xsa
+ale_primitive.json
+dtbo/
+ip_cache/
+./*.txt
+./psu_*
+reports
+checkpoints
+block-design
+__pycache__
