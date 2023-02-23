@@ -136,6 +136,17 @@ def write_xsa(ctx):
     npm = prj.NPM
 
     npm.write_xsa()
+
+@cli.command("write-bin")
+@click.pass_context
+def write_bin(ctx):
+    prj = ctx.obj()
+
+    #open non-project mode
+    npm = prj.NPM
+
+    npm.write_bin()
+
     
 @cli.command("dtbo")
 @click.pass_context

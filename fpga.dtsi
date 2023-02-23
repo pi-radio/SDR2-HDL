@@ -1,0 +1,222 @@
+&pl_gpio {
+    xlnx,all-outputs = <0x0>;
+    xlnx,dout-default = <0x00000000>;
+    xlnx,tri-default = <0x00000000>;
+};
+
+&i2c_clk {
+    clock-frequency = <100000>;
+};
+
+&spi {
+     SYNTH0@0 {
+         compatible = "sivers,synth";
+	 reg = <0>;
+	 spi-max-frequency = <1000000>;
+     };
+     SIVERS0@1 {
+         compatible = "sivers,synth";
+	 reg = <1>;
+	 spi-max-frequency = <1000000>;
+     };
+     SYNTH1@2 {
+         compatible = "sivers,synth";
+	 reg = <2>;
+	 spi-max-frequency = <1000000>;
+     };
+     SIVERS1@3 {
+         compatible = "sivers,synth";
+	 reg = <3>;
+	 spi-max-frequency = <1000000>;
+     };
+     LTC5586_0@4 {
+         compatible = "analog,LTC5586";
+	 reg = <4>;
+	 spi-max-frequency = <1000000>;
+     };
+     LTC5586_1@5 {
+         compatible = "analog,LTC5586";
+	 reg = <5>;
+	 spi-max-frequency = <1000000>;
+     };
+
+     SYNTH2@6 {
+         compatible = "sivers,synth";
+	 reg = <6>;
+	 spi-max-frequency = <1000000>;
+     };
+     SIVERS2@7 {
+         compatible = "sivers,synth";
+	 reg = <7>;
+	 spi-max-frequency = <1000000>;
+     };
+     SYNTH3@8 {
+         compatible = "sivers,synth";
+	 reg = <8>;
+	 spi-max-frequency = <1000000>;
+     };
+     SIVERS3@9 {
+         compatible = "sivers,synth";
+	 reg = <9>;
+	 spi-max-frequency = <1000000>;
+     };
+     LTC5586_2@10 {
+         compatible = "analog,LTC5586";
+	 reg = <10>;
+	 spi-max-frequency = <1000000>;
+     };
+     LTC5586_3@11 {
+         compatible = "analog,LTC5586";
+	 reg = <11>;
+	 spi-max-frequency = <1000000>;
+     };
+
+     SYNTH4@12 {
+         compatible = "sivers,synth";
+	 reg = <12>;
+	 spi-max-frequency = <1000000>;
+     };
+     SIVERS4@13 {
+         compatible = "sivers,synth";
+	 reg = <13>;
+	 spi-max-frequency = <1000000>;
+     };
+     SYNTH5@14 {
+         compatible = "sivers,synth";
+	 reg = <14>;
+	 spi-max-frequency = <1000000>;
+     };
+     SIVERS5@15 {
+         compatible = "sivers,synth";
+	 reg = <15>;
+	 spi-max-frequency = <1000000>;
+     };
+     LTC5586_4@16 {
+         compatible = "analog,LTC5586";
+	 reg = <16>;
+	 spi-max-frequency = <1000000>;
+     };
+     LTC5586_5@17 {
+         compatible = "analog,LTC5586";
+	 reg = <17>;
+	 spi-max-frequency = <1000000>;
+     };
+
+     SYNTH6@18 {
+         compatible = "sivers,synth";
+	 reg = <18>;
+	 spi-max-frequency = <1000000>;
+     };
+     SIVERS6@19 {
+         compatible = "sivers,synth";
+	 reg = <19>;
+	 spi-max-frequency = <1000000>;
+     };
+     SYNTH7@20 {
+         compatible = "sivers,synth";
+	 reg = <20>;
+	 spi-max-frequency = <1000000>;
+     };
+     SIVERS7@21 {
+         compatible = "sivers,synth";
+	 reg = <21>;
+	 spi-max-frequency = <1000000>;
+     };
+     LTC5586_6@22 {
+         compatible = "analog,LTC5586";
+	 reg = <22>;
+	 spi-max-frequency = <1000000>;
+     };
+     LTC5586_7@23 {
+         compatible = "analog,LTC5586";
+	 reg = <23>;
+	 spi-max-frequency = <1000000>;
+     };
+
+     LMX2598@24 {
+         status = "okay";
+         compatible = "linux,spidev";
+	 reg = <24>;
+	 spi-max-frequency = <1000000>;
+     };
+};
+
+&data_capture_samples_in0 {
+    sample-direction = "in";
+    sample-buffer-no = <0>;
+};
+
+&data_capture_samples_in1 {
+    sample-direction = "in";
+    sample-buffer-no = <1>;
+};
+
+&data_capture_samples_in2 {
+    sample-direction = "in";
+    sample-buffer-no = <2>;
+};
+
+&data_capture_samples_in3 {
+    sample-direction = "in";
+    sample-buffer-no = <3>;
+};
+
+&data_capture_samples_in4 {
+    sample-direction = "in";
+    sample-buffer-no = <4>;
+};
+
+&data_capture_samples_in5 {
+    sample-direction = "in";
+    sample-buffer-no = <5>;
+};
+
+&data_capture_samples_in6 {
+    sample-direction = "in";
+    sample-buffer-no = <6>;
+};
+
+&data_capture_samples_in7 {
+    sample-direction = "in";
+    sample-buffer-no = <7>;
+};
+
+&data_capture_samples_out0 {
+    sample-direction = "out";
+    sample-buffer-no = <0>;
+};
+
+&data_capture_samples_out1 {
+    sample-direction = "out";
+    sample-buffer-no = <1>;
+};
+
+&data_capture_samples_out2 {
+    sample-direction = "out";
+    sample-buffer-no = <2>;
+};
+
+&data_capture_samples_out3 {
+    sample-direction = "out";
+    sample-buffer-no = <3>;
+};
+
+&data_capture_samples_out4 {
+    sample-direction = "out";
+    sample-buffer-no = <4>;
+};
+
+&data_capture_samples_out5 {
+    sample-direction = "out";
+    sample-buffer-no = <5>;
+};
+
+&data_capture_samples_out6 {
+    sample-direction = "out";
+    sample-buffer-no = <6>;
+};
+
+&data_capture_samples_out7 {
+    sample-direction = "out";
+    sample-buffer-no = <7>;
+};
